@@ -1,0 +1,143 @@
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    background: radial-gradient(circle at top, #1b3a4b, #0f2027);
+    color:#f1f1f1;
+    line-height:1.7;
+}
+
+/* ===== NAME ===== */
+h1{
+    text-align:center;
+    font-size:44px;
+    margin-top:40px;
+    letter-spacing:1px;
+    color:#ffd369;
+}
+
+/* ===== BUTTON LINE UNDER NAME ===== */
+h1 + div,
+.nav-buttons{
+    text-align:center;
+    margin:20px 0 40px;
+}
+
+/* BUTTON STYLE */
+h1 + div a,
+.nav-buttons a{
+    display:inline-block;
+    padding:11px 24px;
+    margin:6px;
+    background:linear-gradient(135deg,#ffd369,#ffb703);
+    color:#1a1a1a;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    font-size:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.25);
+    transition:all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+h1 + div a:hover,
+.nav-buttons a:hover{
+    background:linear-gradient(135deg,#ff9800,#fb8500);
+    color:white;
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ===== SECTIONS ===== */
+section{
+    max-width:920px;
+    margin:35px auto;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:18px;
+    backdrop-filter:blur(6px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+    transition:transform 0.3s ease;
+}
+
+section:hover{
+    transform:translateY(-4px);
+}
+
+/* ===== HEADINGS ===== */
+h3{
+    color:#ffd369;
+    margin-bottom:12px;
+    font-size:22px;
+    border-left:4px solid #ffb703;
+    padding-left:10px;
+}
+
+/* ===== TEXT ===== */
+p{
+    font-size:16.5px;
+}
+
+/* ===== LISTS ===== */
+ul{
+    margin-left:22px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    margin:50px 0 30px;
+}
+
+/* SOCIAL ICONS */
+footer img{
+    width:48px;
+    margin:10px;
+    cursor:pointer;
+    border-radius:50%;
+    transition:all 0.3s ease;
+}
+
+footer img:hover{
+    transform:scale(1.25) rotate(5deg);
+}
+
+/* ===== LINKS ===== */
+a{
+    color:#ffd369;
+}
+
+a:hover{
+    color:#ffb703;
+}
+
+/* ===== SMOOTH SCROLL ===== */
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    h1{
+        font-size:32px;
+    }
+
+    section{
+        margin:25px 15px;
+        padding:22px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+}
